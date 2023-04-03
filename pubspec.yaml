@@ -16,6 +16,8 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  google_sign_in: ^6.0.2
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:
@@ -36,6 +38,7 @@ flutter:
   assets:
     - assets/images/
     - assets/images/onboarding_page/
+    - assets/images/icons/
 
 
   # To add custom fonts to your application, add a fonts section here,

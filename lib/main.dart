@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:kitchen_room_world/pages/home_page.dart';
+import 'package:kitchen_room_world/pages/login_page.dart';
 import 'package:kitchen_room_world/pages/onboarding_page.dart';
 import 'package:kitchen_room_world/utils/routes.dart';
 
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -21,8 +23,10 @@ class MyApp extends StatelessWidget {
         fontFamily: "Poppins"
       ),
       routes: {
-        "/":(context) => OnBoardingPage(),
+        "/":(context) => Login(),
         Routes.homePageRoute:(context) => HomePage(),
+        Routes.loginPage:(context) =>Login(),
+        Routes.onboardingPageRoute:(context) =>OnBoardingPage(),
       },
     );
   }
